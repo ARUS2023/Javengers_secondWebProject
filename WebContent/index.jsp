@@ -12,6 +12,7 @@ Login form:<br>
 <%String msg1 = (String) session.getAttribute("invalidUser");
 String msg2 = (String) session.getAttribute("invalidPassword");
 String msg3 = (String) session.getAttribute("error");
+String msg4 = (String) session.getAttribute("-4");
 if(msg1 != null){%>
 <h3><%=msg1 %></h3>	
 <%} 
@@ -20,7 +21,11 @@ if(msg2 != null){%>
 <%} 
 if(msg3 != null){%>
 <h3><%=msg3 %></h3>	
-<%} %>
+
+<%} 
+if(msg4 != null){%>
+<h3><%=msg4 %></h3>
+<%}%>
 
 <table style="text-align: left; width: 266px; height: 228px;"
 border="1" cellpadding="2" cellspacing="2">

@@ -1,4 +1,5 @@
 <%@page language="java" import="edu.csbsju.csci230.*,java.util.*"%>
+<%@include file = "verifyLogin.jsp" %>
 <html>
 <head>
 <title></title>
@@ -53,7 +54,7 @@ char status = all.get(i).getStatus();%>
     <input name="Username" value="Username" type="hidden">
 </form>
 </td>
-<td style="vertical-align: top;"><%=username %>
+<td style="vertical-align: top;"><%=fullname %>
 </td>
 <td style="vertical-align: top;"><%=username %>
 </td>
@@ -63,14 +64,16 @@ char status = all.get(i).getStatus();%>
 </td>
 <td style="vertical-align: top;"><%=status %>
 </td>
-<%} %>
+
 <td style="vertical-align: top;">
 <form method="post" action="Delete.jsp" name="Delete">
     <input name="Delete" value="Delete" type="submit">
-    <input name="Username" value="???" type="hidden">
+    
+    <input name="Username" value = <%=username%> type="hidden">
 </form>
 </td>
 </tr>
+<%} %>
 </tbody>
 </table>
 </body>
