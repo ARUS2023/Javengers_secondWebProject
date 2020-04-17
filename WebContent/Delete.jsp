@@ -7,4 +7,9 @@ UserController uc = (UserController)session.getAttribute("loggedInUser");
     User u = uc.getSpecificUser(request.getParameter("Username"));
     uc.deleteUser(u);
     response.sendRedirect("Menu.jsp");
+
+
+
+    out.println("delete user : " + request.getParameter("Username"));
+
 %>

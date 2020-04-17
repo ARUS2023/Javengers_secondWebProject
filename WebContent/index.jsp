@@ -22,10 +22,14 @@ if(msg2 != null){%>
 if(msg3 != null){%>
 <h3><%=msg3 %></h3>	
 
+
 <%} 
 if(msg4 != null){%>
 <h3><%=msg4 %></h3>
 <%}%>
+
+
+
 
 <table style="text-align: left; width: 266px; height: 228px;"
 border="1" cellpadding="2" cellspacing="2">

@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 <%@page language="java" import="edu.csbsju.csci230.*,java.util.*"%>
 <%@include file = "verifyLogin.jsp" %>
+=======
+>>>>>>> bc3050338fd0f4550eee343e6b9103fbf5df4908
 <html>
 <head>
 

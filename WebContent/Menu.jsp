@@ -39,6 +39,7 @@ Edit</td>
 </td>
 </tr>
 
+
 <%for(int i = 0; i< all.size();i++) {
 String fullname = all.get(i).getFullName();
 String username = all.get(i).getUsername();
@@ -65,6 +66,7 @@ char status = all.get(i).getStatus();%>
 <td style="vertical-align: top;"><%=status %>
 </td>
 
+
 <td style="vertical-align: top;">
 <form method="post" action="Delete.jsp" name="Delete">
     <input name="Delete" value="Delete" type="submit">
@@ -74,6 +76,7 @@ char status = all.get(i).getStatus();%>
 </td>
 </tr>
 <%} %>
+
 </tbody>
 </table>
 </body>
